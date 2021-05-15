@@ -83,6 +83,7 @@ const AQIGraph = ({ cityData }) => {
         </p>
         <Line ref={chartRef} data={{ datasets: [] }} options={chartJsConfig} />
       </div>
+      <img src='./aqi-info.png' alt='aqi-info' height="400" />
     </div>
   );
 };
