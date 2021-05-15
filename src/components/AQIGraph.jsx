@@ -12,6 +12,7 @@
 import React, { useEffect, useRef } from "react";
 import { Line } from "react-chartjs-2";
 import { chartJsConfig, chartColors, chartDataset } from "../chartConfig.js";
+import AQIImage from "./aqi-info.png";
 
 const AQIGraph = ({ cityData }) => {
   const chartRef = useRef(null);
@@ -30,7 +31,7 @@ const AQIGraph = ({ cityData }) => {
     let chart = chartRef.current.chartInstance;
 
     if (Object.keys(cityData).length === 0) {
-      chart['data']['datasets'] = [];
+      chart["data"]["datasets"] = [];
       return chart.update();
     }
 
@@ -83,7 +84,10 @@ const AQIGraph = ({ cityData }) => {
         </p>
         <Line ref={chartRef} data={{ datasets: [] }} options={chartJsConfig} />
       </div>
-      <img src='./aqi-info.png' alt='aqi-info' height="400" />
+      <div>
+        <h1 className="header">AQI Info</h1>
+        <img src={AQIImage} alt="aqi-info" />
+      </div>
     </div>
   );
 };
