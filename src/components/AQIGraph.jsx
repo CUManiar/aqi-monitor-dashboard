@@ -1,3 +1,14 @@
+/*
+ * Created Date: Sunday May 16th 2021
+ * Author: Chirag Maniyar
+ * -----
+ * Last Modified: Sunday May 16th 2021 2:41:57 am
+ * Modified By: the developer formerly known as Chirag Maniyar at <chiragma18633@gmail.com>
+ * -----
+ * Copyright (c) 2021 Karma Engineering Solutions Pvt. Ltd.
+ * -----
+ * HISTORY:
+ */
 import React, { useEffect, useRef } from "react";
 import { Line } from "react-chartjs-2";
 import { chartJsConfig, chartColors, chartDataset } from "../chartConfig.js";
@@ -7,7 +18,7 @@ const AQIGraph = ({ cityData }) => {
 
   useEffect(() => {
     updateChart();
-  }, [cityData]);
+  });
 
   const getCityValues = (city) => {
     return city.history.map((history) => {

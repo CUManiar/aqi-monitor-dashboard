@@ -1,4 +1,15 @@
-import React, { useState, useEffect, useReducer } from "react";
+/*
+ * Created Date: Saturday May 15th 2021
+ * Author: Chirag Maniyar
+ * -----
+ * Last Modified: Saturday May 15th 2021 11:49:51 pm
+ * Modified By: the developer formerly known as Chirag Maniyar at <chiragma18633@gmail.com>
+ * -----
+ * Copyright (c) 2021 Karma Engineering Solutions Pvt. Ltd.
+ * -----
+ * HISTORY:
+ */
+import React, { useState, useEffect } from "react";
 import * as bulma from "reactbulma";
 import AQITable from "./AQITable.jsx";
 import AQIGraph from "./AQIGraph";

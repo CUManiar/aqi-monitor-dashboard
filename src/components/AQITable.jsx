@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Detector } from "react-detect-offline";
 import AQIRow from "./AQIRow";
 
