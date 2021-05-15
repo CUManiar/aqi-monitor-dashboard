@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+/*
+ * Created Date: Saturday May 15th 2021
+ * Author: Chirag Maniyar
+ * -----
+ * Last Modified: Saturday May 15th 2021 11:13:17 pm
+ * Modified By: the developer formerly known as Chirag Maniyar at <chiragma18633@gmail.com>
+ * -----
+ * Copyright (c) 2021 Karma Engineering Solutions Pvt. Ltd.
+ * -----
+ * HISTORY:
+ */
+import React, { useState } from "react";
+import { ErrorBoundary } from "react-error-boundary";
+import "./App.css";
+import Dashboard from "./components/Dashboard.jsx";
+import UnsafeScriptsWarning from "./components/UnsafeScriptsWarning";
 
-function App() {
+const App = () => {
+  const [showSpinner, setShowSpinner] = useState(true);
+
+  const hideSpinner = () => {
+    setShowSpinner(false);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ErrorBoundary FallbackComponent={UnsafeScriptsWarning}>
+      <div className="App">
+        <header className="header">Proximity Labs AQI Monitor</header>
+        <Dashboard hideSpinner={hideSpinner} showSpinner={showSpinner} />{" "}
+      </div>
+    </ErrorBoundary>
   );
-}
+};
 
 export default App;

@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+.container {
+  margin-top: 30px !important;
+  margin-bottom: 20px !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000;
+  padding: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-header {
+  background: #4a4a4a;
+  border-radius: 1px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.card-header-title {
+  color: white !important;
+}
+
+#city_list .card-content {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#city_list table {
+  width: 100%;
+  margin: 3px;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.yellowgreen {
+  background-color: yellowgreen;
+}
+
+.brown {
+  background-color: brown;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.selected {
+  background: #4dabf559;
+  box-shadow: 1px 1px 5px #5555557d inset;
+}
+
+tbody tr,
+button {
+  cursor: pointer;
+}
+
+td.updated_at {
+  font-size: 12px;
+}
+
+.icon.market-trend {
+  background: #e2e2e2;
+  border-radius: 5px;
+  margin-left: 3px;
+}
+
+.up-arrow {
+  color: green;
+}
+
+.down-arrow {
+  color: red;
+}
+.unsafe_script_warning {
+  margin-bottom: 20px;
+}
+.has-background-success {
+  background: green;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 5px;
+  font-size: 20px;
 }
