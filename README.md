@@ -20,4 +20,4 @@
 - Github.com
 - react-chart-2.js library
 
-- Visitor can visit the live dashboard on the given link : ![]
+- Visitor can visit the live dashboard on the given link : ![https://aqi-monitor-dashboard.herokuapp.com/]
